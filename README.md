@@ -1,23 +1,31 @@
 # testingFPlus
-Group 35
+##Group 35 gồm các thành viên:
+> - Phạm Hồng Phi
 
-Chương trình giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
+> - Ngô Thái Phong
 
-1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+> - Vũ Thanh Nam
 
-Công cụ sử dụng:
+##Chương trình:
+> - giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
+
+##1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+
+###Công cụ sử dụng:
 EsGrapth
 
-Nguồn:
-https://github.com/Swatinem/esgraph
+###Nguồn:
+Esgraph Project: [link](https://github.com/Swatinem/esgraph)
 
-Cách sử dụng
-	
-- Cài đặt sử dụng gói quản lý package npm: npm install esgrath.
-- Chạy chương trình : $ cat $file | esgraph | dot -Tpng > output.png 
+###Cách sử dụng
+> Cài đặt Nodejs để sử dụng công cụ npm
+
+> Cài đặt sử dụng gói quản lý package npm của Nodejs: ``npm install esgrath``
+
+> Chạy chương trình : ``$ cat $file | esgraph | dot -Tpng > output.png ``
 
 
-2.Tạo ca kiểm thử theo tiêu chuẩn C1P
+##2.Tạo ca kiểm thử theo tiêu chuẩn C1P
 
 Tương tự C1 nhưng các ca kiểm thử của C1P phải thực hiện mọi cặp điều kiện T, F (True, False) cho các điểm điều kiện P1 và P2,...
 
