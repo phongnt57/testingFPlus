@@ -1,47 +1,55 @@
-# testingFPlus
-##Group 35 gồm các thành viên:
-> - Phạm Hồng Phi
+testingFPlus
+============
 
-> - Ngô Thái Phong
+Group 35 gồm các thành viên:
+----------------------------
 
-> - Vũ Thanh Nam
+>   Phạm Hồng Phi
 
-##Chương trình:
-> - giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
+>   Ngô Thái Phong
 
-##1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+>   Vũ Thanh Nam
 
-###Công cụ sử dụng:
+Chương trình:
+-------------
+
+>   giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
+
+1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+-----------------------------------------------------------------
+
+### Công cụ sử dụng:
+
 EsGrapth
 
-###Nguồn:
-Esgraph Project: [link](https://github.com/Swatinem/esgraph)
+### Nguồn:
 
-###Cách sử dụng
-> Cài đặt Nodejs để sử dụng công cụ npm
+Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
-> Cài đặt sử dụng gói quản lý package npm của Nodejs: ``npm install esgrath``
+### Cách sử dụng
 
-> Chạy chương trình : ``$ cat $file | esgraph | dot -Tpng > output.png ``
+>   Cài đặt Nodejs để sử dụng công cụ npm
 
+>   Cài đặt sử dụng gói quản lý package npm của Nodejs: `npm install esgrath`
 
-##2.Tạo ca kiểm thử theo tiêu chuẩn C1P
+>   Chạy chương trình : `$ cat $file | esgraph | dot -Tpng > output.png`
 
-Tương tự C1 nhưng các ca kiểm thử của C1P phải thực hiện mọi cặp điều kiện T, F (True, False) cho các điểm điều kiện P1 và P2,...
+2.Tạo ca kiểm thử theo tiêu chuẩn C1P
+-------------------------------------
+
+Tương tự C1 nhưng các ca kiểm thử của C1P phải thực hiện mọi cặp điều kiện T, F
+(True, False) cho các điểm điều kiện P1 và P2,...
 
 Ta có các test case:
 
 VD: Với code ở trên ta gọi:
 
-P1: (!isNaN(a) || !isNaN(b) || !isNaN(c))
-
-P2: (a==0)
-
-P3: (b==0)
-
-P4: (delta<0)
-
-P5: (c==0)
+| P1 | (!isNaN(a) \|\| !isNaN(b) \|\| !isNaN(c)) |
+|----|-------------------------------------------|
+| P2 | (a==0)                                    |
+| P3 | (b==0)                                    |
+| P4 | (delta\<0)                                |
+| P5 | (c==0)                                    |
 
 Vậy ta có các ca kiểm thử:
 
@@ -70,7 +78,3 @@ GiaiPTB2(1,0,4). Expect value: 2 ,-2
 GiaiPTB2(1,2,7) : Expect value : không có kết quả
 
 GiaiPTB2(1,-3,2) . Expect value : 2,1
- 
-
- 
-
