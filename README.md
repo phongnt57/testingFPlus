@@ -14,8 +14,8 @@ https://github.com/Swatinem/esgraph
 - Chạy chương trình : $ cat $file | esgraph | dot -Tpng > output.png 
 
 
-2.	Tạo ca kiểm thử theo tiêu chuẩn C1P
-C1P : kiểm thử sao cho mỗi lệnh được thực thi ít nhất 1 lần.
+	Tạo ca kiểm thử theo tiêu chuẩn C1P
+kiểm thử sao cho mỗi lệnh được thực thi ít nhất 1 lần.
 Ta có các test case:
  GiaiPTB2(1,1,a) . Expect value : không có kết quả.
 
