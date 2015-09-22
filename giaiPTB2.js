@@ -1,6 +1,6 @@
 function GiaiPTB2(a,b,c){
   var nghiem={};
-  if(!isNaN(a) || !isNaN(b) || !isNaN(c)){
+  if(!isNaN(a) && !isNaN(b) && !isNaN(c)){
     if(a==0){
       if(b==0){
         if(c==0){
