@@ -55,7 +55,7 @@ P2  | (a==0)
  
 Vậy ta có các ca kiểm thử:
 
-Ca kiểm thử | Kết quả
+Ca kiểm thử | Giá trị tương ứng
 ------------|--------
 (P1)| (F)
 (P1, P2, P3, P5) | (T, T, T, T)
