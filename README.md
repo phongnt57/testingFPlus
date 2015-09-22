@@ -4,9 +4,9 @@ testingFPlus
 Group 35 gồm các thành viên:
 ----------------------------
 
-- Phạm Hồng Phi
-- Ngô Thái Phong
 - Vũ Thanh Nam
+- Ngô Thái Phong
+- Phạm Hồng Phi
 
 1. Kết quả bài làm:
 -------------
@@ -49,13 +49,9 @@ function GiaiPTB2(a, b, c) {
 
 ### a. Công cụ sử dụng:
 
-EsGrapth
-
-### b. Nguồn công cụ:
-
 Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
-### c. Cách sử dụng:
+### b. Cách sử dụng:
 
 >   Cài đặt Nodejs để sử dụng công cụ npm
 
