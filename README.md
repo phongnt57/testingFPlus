@@ -1,14 +1,16 @@
 testingFPlus
 ============
 
-Group 35 gồm các thành viên:
+1. Group 35 gồm các thành viên:
 ----------------------------
 
-- Vũ Thanh Nam
-- Ngô Thái Phong
 - Phạm Hồng Phi
+ 
+- Ngô Thái Phong
 
-1. Kết quả bài làm:
+- Vũ Thanh Nam
+
+2. Kết quả bài làm:
 -------------
 
 >   giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
@@ -44,7 +46,7 @@ function GiaiPTB2(a, b, c) {
 #### b. Đồ thị
 ![dothi](<output.png?raw=true>)
 
-2.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+3.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
 -----------------------------------------------------------------
 
 ### a. Công cụ sử dụng:
@@ -53,13 +55,13 @@ Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
 ### b. Cách sử dụng:
 
->   Cài đặt Nodejs để sử dụng công cụ npm
+-   Cài đặt Nodejs để sử dụng công cụ npm
 
->   Cài đặt sử dụng gói quản lý package npm của Nodejs: `npm install esgrath`
+-   Cài đặt sử dụng gói quản lý package npm của Nodejs: `npm install esgrath`
 
->   Chạy chương trình : `$ cat $file | esgraph | dot -Tpng > output.png`
+-   Chạy chương trình : `$ cat $file | esgraph | dot -Tpng > output.png`
 
-3.Tạo ca kiểm thử theo tiêu chuẩn C1P
+4.Tạo ca kiểm thử theo tiêu chuẩn C1P
 -------------------------------------
 
 >Tương tự C1 nhưng các ca kiểm thử của C1P phải thực hiện mọi cặp điều kiện T, F
