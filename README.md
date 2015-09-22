@@ -19,7 +19,7 @@ testingFPlus
 ```js
 function GiaiPTB2(a, b, c) {
     var nghiem = {};
-    if (!isNaN(a) || !isNaN(b) || !isNaN(c)) {
+    if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
         if (a == 0) {
             if (b == 0) {
                 if (c == 0) {
@@ -74,7 +74,7 @@ VD: Với code ở trên ta gọi:
  
 Điểm  | Câu lệnh
 ------------- | -------------
-P1  | (!isNaN(a) \|\| !isNaN(b) \|\| !isNaN(c)) 
+P1  | (!isNaN(a) \&\& !isNaN(b) \&\& !isNaN(c)) 
 P2  | (a==0)
  P3 | (b==0)                                    
  P4 | (delta\<0)                                
@@ -97,7 +97,7 @@ Ca kiểm thử | Giá trị tương ứng
 --------|-------
 GiaiPTB2(a,1,1) | Expect value : không có kết quả.
 GiaiPTB2(0,0,0) | Expect value : R ( tập R - vô số nghiệm)
-GiaiPTB2(0,0,1) | Expect value : không có kết quả
+GiaiPTB2(0,0,1) | Expect value :  không có kết quả
 GiaiPTB2(1,0,4) | Expect value: 2 ,-2
 GiaiPTB2(1,2,7) | Expect value : không có kết quả
 GiaiPTB2(1,-3,2) | Expect value : 2,1
