@@ -2,7 +2,8 @@
 Group 35
 
 Chương trình giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
-1.	Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+
+1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
 
 Công cụ sử dụng:
 EsGrapth
@@ -16,7 +17,8 @@ Cách sử dụng
 - Chạy chương trình : $ cat $file | esgraph | dot -Tpng > output.png 
 
 
-	Tạo ca kiểm thử theo tiêu chuẩn C1P
+2.Tạo ca kiểm thử theo tiêu chuẩn C1P
+
 Tương tự C1 nhưng các ca kiểm thử của C1P phải thực hiện mọi cặp điều kiện T, F (True, False) cho các điểm điều kiện P1 và P2,...
 
 Ta có các test case:
