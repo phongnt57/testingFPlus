@@ -4,18 +4,16 @@ testingFPlus
 Group 35 gồm các thành viên:
 ----------------------------
 
->   Phạm Hồng Phi
+- Phạm Hồng Phi
+- Ngô Thái Phong
+- Vũ Thanh Nam
 
->   Ngô Thái Phong
-
->   Vũ Thanh Nam
-
-Nội dung bài làm:
+1. Kết quả bài làm:
 -------------
 
 >   giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
 
-####Mã chương trình
+#### a. Mã chương trình
 ```js
 function GiaiPTB2(a, b, c) {
     var nghiem = {};
@@ -43,21 +41,21 @@ function GiaiPTB2(a, b, c) {
     return nghiem;
 }
 ```
-####Đồ thị
+#### b. Đồ thị
 ![dothi](<output.png?raw=true>)
 
-1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
+2.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
 -----------------------------------------------------------------
 
-### Công cụ sử dụng:
+### a. Công cụ sử dụng:
 
 EsGrapth
 
-### Nguồn công cụ:
+### b. Nguồn công cụ:
 
 Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
-### Cách sử dụng:
+### c. Cách sử dụng:
 
 >   Cài đặt Nodejs để sử dụng công cụ npm
 
@@ -65,13 +63,13 @@ Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
 >   Chạy chương trình : `$ cat $file | esgraph | dot -Tpng > output.png`
 
-2.Tạo ca kiểm thử theo tiêu chuẩn C1P
+3.Tạo ca kiểm thử theo tiêu chuẩn C1P
 -------------------------------------
 
 >Tương tự C1 nhưng các ca kiểm thử của C1P phải thực hiện mọi cặp điều kiện T, F
 (True, False) cho các điểm điều kiện P1 và P2,...
 
-####Ta có các test case:
+#### Ta có các test case:
 
 VD: Với code ở trên ta gọi:
 
@@ -84,7 +82,7 @@ P2  | (a==0)
  P4 | (delta\<0)                                
  P5 | (c==0)   
  
-Vậy ta có các ca kiểm thử:
+#### Vậy ta có các ca kiểm thử:
 
 Ca kiểm thử | Giá trị tương ứng
 ------------|--------
@@ -95,7 +93,7 @@ Ca kiểm thử | Giá trị tương ứng
 (P1, P2, P4) | (T, F, T)
 (P1, P2, P4) | (T, F, F)
 
-Cụ thể đầu vào lần lượt như sau:
+#### Cụ thể đầu vào lần lượt như sau:
 
 Đầu vào | Đầu ra
 --------|-------
