@@ -9,7 +9,7 @@ function GiaiPTB2(a,b,c){
         }
         return nghiem;
       }
-      nghiem.x= k-b/c;
+      nghiem.x= -b/c;
       return nghiem;
     } else{
       var delta= b*b - 4*a*c;
