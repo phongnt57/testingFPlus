@@ -10,10 +10,41 @@ Group 35 gồm các thành viên:
 
 >   Vũ Thanh Nam
 
-Chương trình:
+Nội dung bài làm:
 -------------
 
 >   giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
+
+####Mã chương trình
+```js
+function GiaiPTB2(a, b, c) {
+    var nghiem = {};
+    if (!isNaN(a) || !isNaN(b) || !isNaN(c)) {
+        if (a == 0) {
+            if (b == 0) {
+                if (c == 0) {
+                    nghiem.x = 'R';
+                    return nghiem;
+                }
+                return nghiem;
+            }
+            nghiem.x = k - b / c;
+            return nghiem;
+        } else {
+            var delta = b * b - 4 * a * c;
+            if (delta < 0) {
+                return nghiem;
+            }
+            nghiem.x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            nghiem.x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            return nghiem;
+        }
+    }
+    return nghiem;
+}
+```
+####Đồ thị
+![dothi](<output.png?raw=true>)
 
 1.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
 -----------------------------------------------------------------
@@ -22,11 +53,11 @@ Chương trình:
 
 EsGrapth
 
-### Nguồn:
+### Nguồn công cụ:
 
 Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
-### Cách sử dụng
+### Cách sử dụng:
 
 >   Cài đặt Nodejs để sử dụng công cụ npm
 
@@ -69,7 +100,7 @@ Cụ thể đầu vào lần lượt như sau:
 Đầu vào | Đầu ra
 --------|-------
 GiaiPTB2(a,1,1) | Expect value : không có kết quả.
-GiaiPTB2(0,0,0) | Expect value : R
+GiaiPTB2(0,0,0) | Expect value : R ( tập R - vô số nghiệm)
 GiaiPTB2(0,0,1) | Expect value : không có kết quả
 GiaiPTB2(1,0,4) | Expect value: 2 ,-2
 GiaiPTB2(1,2,7) | Expect value : không có kết quả
