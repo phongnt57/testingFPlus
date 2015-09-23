@@ -57,7 +57,7 @@ Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
 -   Cài đặt Nodejs để sử dụng công cụ npm
 
--   Cài đặt sử dụng gói quản lý package npm của Nodejs: `npm install esgrath`
+-   Cài đặt esgraph bằng cách sử dụng gói quản lý package npm của Nodejs: `npm install esgrath`
 
 -   Chạy chương trình : `$ cat $file | esgraph | dot -Tpng > output.png`
 
