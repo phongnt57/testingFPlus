@@ -5,10 +5,11 @@ testingFPlus
 ----------------------------
 
 - Phạm Hồng Phi
- 
+
 - Ngô Thái Phong
 
 - Vũ Thanh Nam
+
 
 2. Kết quả bài làm:
 -------------
@@ -16,6 +17,8 @@ testingFPlus
 >   giải phương trình bậc 2 bằng JavaScript và tự động sinh đồ thị chương trình
 
 #### a. Mã chương trình
+- Chương trình giải phương trình bậc 2
+
 ```js
 function GiaiPTB2(a, b, c) {
     var nghiem = {};
@@ -43,8 +46,31 @@ function GiaiPTB2(a, b, c) {
     return nghiem;
 }
 ```
+- Chương trình tính tổng số chẵn của một mảng
+
+```js
+function evensum(array){
+	var sum = 0;
+	if(!Array.isArray(array)){
+		return null;
+	}
+	for(var i =0 ; i< array.length; i++){
+		if(array[i]%2 ==0){
+			sum += array[i];
+		}
+	}
+	return sum;
+}
+```
+
 #### b. Đồ thị
+- Chương trình giải phương trình bậc 2
+
 ![dothi](<output.png?raw=true>)
+
+- Chương trình tính tổng số chẵn của một mảng
+
+![dothi2](<output2.png?raw=true>)
 
 3.Tìm một công cụ tạo đồ thị chương trình cho ngôn ngữ Javascript
 -----------------------------------------------------------------
@@ -71,15 +97,15 @@ Esgraph Project: [link](<https://github.com/Swatinem/esgraph>)
 
 VD: Với code ở trên ta gọi:
 
- 
+
 Điểm  | Câu lệnh
 ------------- | -------------
-P1  | (!isNaN(a) \&\& !isNaN(b) \&\& !isNaN(c)) 
+P1  | (!isNaN(a) \&\& !isNaN(b) \&\& !isNaN(c))
 P2  | (a==0)
  P3 | (b==0)                                    
  P4 | (delta\<0)                                
  P5 | (c==0)   
- 
+
 #### Vậy ta có các ca kiểm thử:
 
 Ca kiểm thử | Giá trị tương ứng
