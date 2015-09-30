@@ -127,3 +127,42 @@ GiaiPTB2(0,0,1) | Expect value :  không có kết quả
 GiaiPTB2(0,3,4) | Expect value: -4/3
 GiaiPTB2(1,2,7) | Expect value : không có kết quả
 GiaiPTB2(1,-3,2) | Expect value : 2,1
+
+
+
+5.Tạo ca kiểm thử với vòng lặp chương trình tính tổng số chẵn của một mảng
+-------------------------------------
+
+>Ta phải thực hiện với các test case để kiểm thử lệnh lặp n lần:
+-  Chạy 0 lần lặp
+-  Chạy 1 lần lặp
+-  Chạy 2 lần lặp
+-  Chạy k lần với 2 < k < n - 1
+-  Chạy n -1 lần
+-  Chạy  n lần
+
+
+
+#### Ta có các test case:
+
+
+
+Ca kiểm thử | Giá trị tương ứng
+------------|--------
+(0  lần )  | 'a'
+(1 lần )   | (0,1,3,5,7,9,11)
+(2 lần )   | (0,2,3,5,7,9) 
+(k   lần ) | (0,1,2,3,4,5,6,7,8,9,10)
+(n-1 lần ) | (0,2,4,6,8,9)
+(n lần)    | (0,2,4,6,8,10)
+
+#### Cụ thể đầu vào lần lượt như sau:
+
+Đầu vào | Đầu ra
+--------|-------
+evensum('a') | Expect value : expected null
+evensum(0,1,3,5,7,9,11) | Expect value : 0
+evensum(0,2,3,5,7,9) |   Expect value : 2
+evensum(0,1,2,3,4,5,6,7,8,9,10) | Expect value: 30
+evensum((0,2,4,6,8,9 | Expect value : 20
+evensum((0,2,4,6,8,10) | Expect value : 30
