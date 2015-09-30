@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QUnit basic example</title>
+  <link rel="stylesheet" href="./qunit-1.19.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="./qunit-1.19.0.js"></script>
+  <script src="./tinhtongdayso.js"></script>
+  <script src="./giaiPTB2.js"></script>
+  <script>
+    QUnit.test( "evensum test null array ", function( assert ) {
+      assert.equal( 0, evensum([]),"expected equal 0" );
+    });
+    QUnit.test( "evensum test not array", function( assert ) {
+      assert.equal( null, evensum('a'), "expected null" );
+    });
+    QUnit.test( "evensum test normal array from 0 to 10", function( assert ) {
+      assert.equal( 30, evensum([0,1,2,3,4,5,6,7,8,9,10]), "expected 30" );
+    });
+    QUnit.test( "evensum test no even number ", function( assert ) {
+      assert.equal( 0, evensum([1,3,5,7,9,11]), "expected 0" );
+    });
+    QUnit.test( "giaiPTB2 (1,3,2)", function( assert ) {
+      assert.deepEqual( {"x1": -1, "x2": -2}, GiaiPTB2(1,3,2) , "expected object with param -1,-2");
+    });
+    QUnit.test( "giaiPTB2 ('a',1,1)", function( assert ) {
+      assert.deepEqual( {}, GiaiPTB2('a',1,1) ," expected {}");
+    });
+    QUnit.test( "giaiPTB2 (0,0,0)", function( assert ) {
+      assert.deepEqual( {x: 'R'}, GiaiPTB2(0,0,0) ," expected {x: 'R'}");
+    });
+    QUnit.test( "giaiPTB2 (0,3,4)", function( assert ) {
+      assert.deepEqual( {x: -4/3}, GiaiPTB2(0,3,4) ," expected {x: -4/3}");
+    });
+    QUnit.test( "giaiPTB2 (1,2,7)", function( assert ) {
+      assert.deepEqual( {}, GiaiPTB2(1,2,7) ," expected {}");
+    });
+  </script>
+</body>
+</html>
